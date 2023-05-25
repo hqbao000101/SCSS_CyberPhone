@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/sass_favicon.png"
+      type="image/x-icon"
+    />
+    <title>SASS - CyberPhone</title>
+
+    <!-- ! FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ! Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ! my css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- ! header -->
+    <header>
+      <div class="container">
+        <div class="header_content">
+          <!-- todo: logo - left -->
+          <div class="header_logo">
+            <a href="#">CyberPhone</a>
+          </div>
+
+          <!-- todo: navbar menu - right -->
+          <nav class="header_nav">
+            <ul>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li id="product_scroll"><a href="#product">Shop</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- ! body -->
+    <main>
+      <!-- ! banner -->
+      <section class="banner">
+        <div class="container">
+          <div class="banner_content">
+            <div class="banner_text">
+              <h1>CyberPhone</h1>
+              <p class="sub_title">Best Smartphone of 2021!</p>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                sapiente?
+              </p>
+              <div class="button_group">
+                <button class="btn_info">
+                  <i class="fa-solid fa-circle-info"></i> More Info
+                </button>
+                <button class="btn_shop">
+                  <i class="fa-solid fa-cart-shopping"></i> Shop
+                </button>
+              </div>
+            </div>
+            <div class="banner_img">
+              <img src="./img/product-header2.png" alt="banner-phone" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ! product -->
+      <section id="product" class="product">
+        <div class="container">
+          <div class="product_title">
+            <h2>-Featured Products-</h2>
+          </div>
+          <div class="product_content">
+            <!-- todo: item 1 -->
+            <div class="product_item">
+              <img src="./img/product1.png" alt="Product 1" />
+              <div class="product_text">
+                <h3>CyberBeat <span>$39.99</span></h3>
+                <div class="category">Accessories</div>
+                <div class="rate_buy">
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <button>
+                    <i class="fa-solid fa-cart-shopping"></i>Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- todo: item 2 -->
+            <div class="product_item">
+              <img src="./img/product2.png" alt="Product 2" />
+              <div class="product_text">
+                <h3>CyberPhone <span>$99.99</span></h3>
+                <div class="category">Accessories</div>
+                <div class="rate_buy">
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <button>
+                    <i class="fa-solid fa-cart-shopping"></i>Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- todo: item 3 -->
+            <div class="product_item">
+              <img src="./img/product3.png" alt="Product 3" />
+              <div class="product_text">
+                <h3>CyberIpad <span>$109.99</span></h3>
+                <div class="category">Accessories</div>
+                <div class="rate_buy">
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <button>
+                    <i class="fa-solid fa-cart-shopping"></i>Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- todo: item 4 -->
+            <div class="product_item">
+              <img src="./img/product4.png" alt="Product 4" />
+              <div class="product_text">
+                <h3>CyberWatch <span>$59.99</span></h3>
+                <div class="category">Accessories</div>
+                <div class="rate_buy">
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <button>
+                    <i class="fa-solid fa-cart-shopping"></i>Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- todo: item 5 -->
+            <div class="product_item">
+              <img src="./img/product5.png" alt="Product 5" />
+              <div class="product_text">
+                <h3>CyberGlass <span>$49.99</span></h3>
+                <div class="category">Accessories</div>
+                <div class="rate_buy">
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <button>
+                    <i class="fa-solid fa-cart-shopping"></i>Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- todo: item 6 -->
+            <div class="product_item">
+              <img src="./img/product6.png" alt="Product 6" />
+              <div class="product_text">
+                <h3>CyberEar <span>$79.99</span></h3>
+                <div class="category">Accessories</div>
+                <div class="rate_buy">
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <button>
+                    <i class="fa-solid fa-cart-shopping"></i>Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ! footer -->
+    <footer>
+      <p>&copy; 2020. All rights reserved</p>
+    </footer>
+
+    <!-- ! my js -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
