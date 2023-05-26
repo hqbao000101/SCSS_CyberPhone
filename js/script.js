@@ -29,6 +29,24 @@ document.addEventListener("scroll", function () {
     for (var i = 0; i < product_arr.length; i++) {
       product_arr[i].classList.add("animation_active");
     }
-    // todo: active - navbar
+    // todo: active - navbar: shop
+    for (var i = 0; i < header_navbar.length; i++) {
+      document
+        .querySelector("header .header_nav ul li.active")
+        .classList.remove("active");
+      document
+        .querySelector("header .header_nav ul li:nth-child(3)")
+        .classList.add("active");
+    }
+  } else {
+    // todo: active - navbar: home
+    for (var i = 0; i < header_navbar.length; i++) {
+      document
+        .querySelector("header .header_nav ul li.active")
+        .classList.remove("active");
+      document
+        .querySelector("header .header_nav ul li:nth-child(1)")
+        .classList.add("active");
+    }
   }
 });
