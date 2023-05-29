@@ -13,3 +13,7 @@ Mixin and includes:
  - mixins: cú pháp khai báo, dùng từ khoá @mixin tên (tham số truyền vào) {
   các thuộc tính css hay được sử dụng
  } --> lưu ý: khi có các tham số mặc định truyền vào mixin, ta phải để các tham số đó nằm ở sau cùng, tránh việc truyền vào bị thiếu tham số
+```
+ ----
+ # Distribute files and import
+ - Naming import files will start with "_name.scss". when doing that, the vscode scss extension will not interpret it, only main scss file --> @import? @use?

@@ -1,59 +1,10 @@
-// ! variables
-// todo: color
-$color-primary: #2a72dc;
-$color-secondary: #1d355e;
-$color-white: #fff;
-$color-yellow-star: #f9d310;
-
-// todo: font-weight
-$fw-thin: 300;
-$fw-normal: 400;
-$fw-medium: 500;
-$fw-semibold: 600;
-$fw-bold: 700;
-
-// todo: font-size
-$fs-1: 16px;
-$fs-2: 18px;
-$fs-3: 24px;
-$fs-4: 40px;
-$fs-5: 60px;
-
-// todo: spacing
-$spacer: 1rem;
-
-// ! mixins
-// todo: text
-@mixin styleText($fs, $fw, $color) {
-  font-size: $fs;
-  font-weight: $fw;
-  color: $color;
-}
-
-// todo: button
-@mixin styleButton(
-  $padding,
-  $bg-color,
-  $border,
-  $color,
-  $color-hover,
-  $border-hover,
-  $bg-color-hover
-) {
-  padding: $padding;
-  background-color: $bg-color;
-  border: 2px solid $border;
-  color: $color;
-  transition: all 0.5s;
-  border-radius: 8px;
-  cursor: pointer;
-  &:hover {
-    color: $color-hover;
-    border-color: $border-hover;
-    background-color: $bg-color-hover;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
-  }
-}
+// ! import files
+@import "./helpers/variables";
+@import "./helpers/helpers";
+@import "./helpers/animation";
+@import "./components/button";
+@import "./themes/darkTheme";
+@import "./themes/lightTheme";
 
 // ! extend
 .flex-between {
@@ -375,17 +326,5 @@ footer {
   p {
     text-align: center;
     @include styleText($fs-2, $fw-bold, $color-white);
-  }
-}
-
-// ! keyframes
-@keyframes goFromHeaven {
-  from {
-    transform: translateY(-150px) scale(0);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0) scale(1);
-    opacity: 1;
   }
 }

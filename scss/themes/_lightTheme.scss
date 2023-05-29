@@ -1,0 +1,9 @@
+body.light {
+  background-color: $color-white;
+  color: black;
+
+  h1 {
+    color: $color-primary;
+    font-weight: $fw-normal;
+  }
+}

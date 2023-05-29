@@ -1,3 +1,37 @@
+@keyframes goFromHeaven {
+  from {
+    transform: translateY(-150px) scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+.button_primary {
+  background-color: #2a72dc;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+body.dark {
+  background-color: #222;
+  color: aquamarine;
+}
+body.dark h1 {
+  color: #fff;
+  font-weight: bold;
+}
+
+body.light {
+  background-color: #fff;
+  color: black;
+}
+body.light h1 {
+  color: #2a72dc;
+  font-weight: 400;
+}
+
 .flex-between, section.product .product_content .product_item .product_text .rate_buy, section.product .product_content .product_item .product_text h3, section.product .product_content, section.banner .banner_content, header .header_content {
   display: flex;
   justify-content: space-between;
@@ -383,15 +417,4 @@ footer p {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
-}
-
-@keyframes goFromHeaven {
-  from {
-    transform: translateY(-150px) scale(0);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+// ! keyframes
+@keyframes goFromHeaven {
+  from {
+    transform: translateY(-150px) scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
